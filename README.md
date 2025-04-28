@@ -1,15 +1,70 @@
-# [Agency Jekyll Theme](https://github.com/raviriley/agency-jekyll-theme) Starter Template
-[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/raviriley/agency-jekyll-theme/blob/master/LICENSE.txt)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/raviriley)
+# イノコムスクエア & 本サイト README
 
-This is the fastest and easiest way to get up and running on GitHub Pages.
-Simply generate your own repository by clicking the 
-[![template button](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate) button, 
-then replace the sample content with your own and configure for your needs.
+---
 
-If you want your website to be at `YOUR-USERNAME.github.io`, that's what you must name your repo. If you want it to be like this: `https://raviriley.github.io/agency-jekyll-theme-starter/`, them make sure the `baseurl` in `_config.yml` matches the name of your repo. You can also use a `CNAME` file and your own custom domain!
+## 目次
+1. [イノコムスクエアとは](#イノコムスクエアとは)  
+2. [本サイトの目的](#本サイトの目的)  
+3. [サイトの主な機能](#サイトの主な機能)  
+4. [技術スタック](#技術スタック)  
+5. [ローカル開発環境](#ローカル開発環境)  
+6. [デプロイ方法](#デプロイ方法)  
+7. [ディレクトリ構成](#ディレクトリ構成)  
+8. [カスタマイズについて](#カスタマイズについて)  
+9. [貢献・フィードバック](#貢献・フィードバック)  
+10. [ライセンス](#ライセンス)  
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
+---
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
+## イノコムスクエアとは  
+**イノコムスクエア**（InnoCom Square）は、[積水ハウスグループ](https://www.sekisuihouse.co.jp/)が運営するオープンイノベーション施設です。  
+- スタートアップ企業や研究者が集い、住生活DX・脱炭素・ウェルビーイングなどの未来社会課題に取り組む場  
+- **公式サイト**: [https://square.innocom.co.jp/](https://square.innocom.co.jp/)
+
+---
+
+## 本サイトの目的  
+本リポジトリは、イノコムスクエアと連携して実施する「3rd Lab ハッカソン」向けの **公式プロジェクトサイト** です。  
+
+- **インデックスホイール**：12 の未来社会課題テーマを直感的にビジュアル表示  
+- **実施フロー**：テーマ設定 → GitHub リポジトリ構築 → Azure & OpenAI環境準備 → LINE＋HubSpot登録 → ワークショップ → ハッカソン → Demo Day → コミュニティ継続  
+- **詳細ドキュメント**：各テーマ・各ステップごとに専用ページを設置  
+
+公開サイトURL:  
+👉 [https://innocom-3rdlab.github.io/innocom-3rdlab-site/](https://innocom-3rdlab.github.io/innocom-3rdlab-site/)
+
+---
+
+## サイトの主な機能
+
+- **ヒーローセクション**: インデックスホイール＋キャッチコピー
+- **テーマカード一覧**: 未来課題をビジュアルカード形式で紹介
+- **タイムライン**: 実施ステップを時系列で可視化
+- **詳細ページリンク**: 各カード・各ステップから詳細解説へ誘導
+- **レスポンシブデザイン**: PC／タブレット／スマホ対応
+
+---
+
+## 技術スタック
+
+- [Jekyll](https://jekyllrb.com/) + [Agency Jekyll Theme Starter](https://github.com/raviriley/agency-jekyll-theme-starter)
+- HTML5, SCSS, JavaScript ([D3.js](https://d3js.org/)) でインタラクティブホイール
+- GitHub Pagesによるホスティング（remote_theme利用）
+- データ管理：`_data/portfolio.yml`, `_data/timeline.yml`, `_data/navigation.yml`
+
+---
+
+## ローカル開発環境
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/innocom-3rdlab/innocom-3rdlab-site.git
+cd innocom-3rdlab-site
+
+# 必要なGemインストール
+bundle install
+
+# サイトを起動
+bundle exec jekyll serve
+
+# ブラウザで http://localhost:4000 を開く
