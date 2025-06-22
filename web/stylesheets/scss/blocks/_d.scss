@@ -1,0 +1,35 @@
+.d-none-up {
+  @include mq-up(sm) {
+    &--sm { display: none; }
+  }
+  @include mq-up(md) {
+    &--md { display: none; }
+  }
+  @include mq-up(lg) {
+    &--lg { display: none; }
+  }
+  @include mq-up(xl) {
+    &--xl { display: none; }
+  }
+}
+.d-none-down {
+  @include mq-down(sm) {
+    &--sm { display: none; }
+  }
+  @include mq-down(md) {
+    &--md { display: none; }
+  }
+  @include mq-down(lg) {
+    &--lg { display: none; }
+  }
+  @include mq-down(xl) {
+    &--xl { display: none; }
+  }
+}
+.d-contents {
+  display: contents;
+}
+
+.d-flex {
+  display: flex;
+}

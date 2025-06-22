@@ -1,0 +1,15 @@
+// local variable
+$l-toggle-duration: .25s;
+
+// fade
+[data-toggle-fade] {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $l-toggle-duration ease-out, visibility 0s ease-out $l-toggle-duration;
+  will-change: opacity;
+}
+[data-toggle-fade="active"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $l-toggle-duration ease-out, visibility 0s ease-out;
+}

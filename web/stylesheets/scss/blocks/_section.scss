@@ -1,0 +1,11 @@
+.section {
+  & img {
+    width: 100%;
+  }
+  &--footButtonSp {
+    position: sticky;
+    bottom: 0;
+    padding: calc((16px * 100dvw) / 375px) calc((48px * 100dvw) / 375px);
+    z-index: 1109;
+  }
+}
