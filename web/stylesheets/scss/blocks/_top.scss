@@ -1,0 +1,29 @@
+// local classes
+%l-top-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+
+  @include mq-down(lg) {
+    display: none;
+  }
+  & a {
+    display: flex;
+
+    & img {
+      width: calc((103px * 100dvw) / 1920px);
+      height: auto;
+    }
+    &:hover {
+      opacity: .68;
+    }
+  }
+}
+
+.top {
+  &__button {
+    @extend %l-top-button;
+  }
+}

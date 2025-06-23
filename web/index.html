@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>学校でも企業でもない、第3の実験場｜3rd Lab. × InnoCom Square（イノコム・スクエア）</title>
+
+<link rel="stylesheet" href="./stylesheets/application.min.css?240924">
+<!-- /stylesheets -->
+
+<script src="./javascripts/application.js" type="text/javascript" defer></script>
+<script src="./javascripts/modules/smooth-scroll.js" type="text/javascript" defer></script>
+<!-- /javascripts -->
+
+</head>
+
+<header class="header">
+  <a data-href="#top">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/99_logo.png" alt="3rd Lab. Logo">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/99_logo.png" alt="3rd Lab. Logo">
+    </div>
+  </a>
+
+  <ul>
+    <li>
+      <a data-href="#statement">Statement</a>
+    </li>
+    <li>
+      <a data-href="#about">About 3rd Lab.</a>
+    </li>
+    <li>
+      <a data-href="#ambassador">Ambassador Program</a>
+    </li>
+    <li>
+      <a data-href="#innocom">InnoCom Square</a>
+    </li>
+  </ul>
+</header>
+
+<div class="hamburger-menu d-none-up--lg">
+  <button data-open="menu-list" data-toggle-fade="active">
+    <img src="./images/sp/menu.svg" alt="menu" width="24" height="24">
+  </button>
+
+  <button data-close="menu-list" data-toggle-fade>
+    <img src="./images/sp/close.svg" alt="close" width="24" height="24">
+  </button>
+
+  <ul id="menu-list" data-toggle-fade>
+    <li>
+      <a data-href="#statement" data-close="menu-list">Statement</a>
+    </li>
+    <li>
+      <a data-href="#about" data-close="menu-list">About 3rd Lab.</a>
+    </li>
+    <li>
+      <a data-href="#ambassador" data-close="menu-list">Ambassador Program</a>
+    </li>
+    <li>
+      <a data-href="#innocom" data-close="menu-list">InnoCom Square</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu')
+
+    hamburgerMenu.querySelector('[data-open]').addEventListener('click', function() {
+      hamburgerMenu.querySelectorAll('[data-toggle-fade]').forEach(el => {
+        const isActive = el.getAttribute('data-toggle-fade') === 'active'
+        el.setAttribute('data-toggle-fade', isActive ? '' : 'active')
+      })
+    })
+
+    hamburgerMenu.querySelectorAll('[data-close]').forEach(closeBtn => {
+      closeBtn.addEventListener('click', function() {
+        hamburgerMenu.querySelectorAll('[data-toggle-fade]').forEach(el => {
+          el.setAttribute('data-toggle-fade', '')
+        })
+        const openBtn = hamburgerMenu.querySelector('[data-open]')
+        openBtn.setAttribute('data-toggle-fade', 'active')
+      })
+    })
+  })
+</script>
+
+<section id="top" class="section top">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_2_top.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_2_top.png">
+  </div>
+
+  <div class="top__button">
+    <a href="https://lhco.li/4mwuLLn" target="_blank" rel="noopener noreferrer">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/99_button01.png">
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="statement" class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_3_stertment01.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_3_stertment01.png">
+  </div>
+</section>
+
+<section class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_4_stertment02.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_4_stertment02.png">
+  </div>
+</section>
+
+<section class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_5_stertment03.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_5_stertment03.png">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_6_about.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_6_about.png">
+  </div>
+</section>
+
+<section id="ambassador" class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_7_Ambassador.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_7_Ambassador.png">
+  </div>
+</section>
+
+<section class="section resources">
+  <div class="resources__button">
+    <a href="https://lhco.li/4mwuLLn" target="_blank" rel="noopener noreferrer">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/99_button02.png">
+      </div>
+      <div class="d-none-up--lg">
+        <img src="./images/sp/99_button02.png">
+      </div>
+    </a>
+  </div>
+
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_8_Resorces.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_8_Resorces.png">
+  </div>
+</section>
+
+<section class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_9_Requirements.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_9_Requirements.png">
+  </div>
+</section>
+
+<section class="section overview">
+  <div class="overview__container">
+    <div class="overview__card">
+      <div class="overview__title">Overview</div>
+
+      <ul>
+        <li>
+          <div class="overview__listHead">対象</div>
+          <div class="overview__listContent">
+            学生団体や学生コミュニティを運営している<br>
+            大学・大学院・専門学校に在籍する学生（文理不問）
+          </div>
+        </li>
+        <li>
+          <div class="overview__listHead">アンバサダー<br class="d-none-down--lg">特典</div>
+          <div class="overview__listContent">
+            イノコムスクエア入館権・クロマキースタジオ利用権・開発環境（GitHub・Azure・OpenAI API環境など）提供・技術サポート・開発費用50万円支給（プロジェクト単位）
+          </div>
+        </li>
+        <li>
+          <div class="overview__listHead">アンバサダーに<br>求められること</div>
+          <div class="overview__listContent">
+            ・テクノロジーを活用した社会課題解決に対する強い想いがあること<br>
+            ・3rd Lab.を積極的に広める行動力があること<br>
+            ・提供されるリソースを最大限使うこと<br>
+            ・キックオフMTGに参加できること<br>
+            ・DemoDayに参加できること
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="d-none-down--lg">
+    <img src="./images/pc/_11_footer01.png">
+  </div>
+  <div class="d-none-up--lg">
+    <img src="./images/sp/_11_footer01.png">
+  </div>
+</section>
+
+<div style="background: #fff;">
+  <section id="innocom" class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/_11_footer02.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/_11_footer02.png">
+    </div>
+  </section>
+
+  <section class="section company">
+    <div class="company__container">
+      <ul>
+        <li>
+          <div class="company__listHead">施設名</div>
+          <div class="company__listContent">
+            InnoCom Square（イノコム・スクエア）
+          </div>
+        </li>
+        <li>
+          <div class="company__listHead">所在地</div>
+          <div class="company__listContent">
+            〒107-0052<br>
+            東京都港区赤坂2丁目4-6赤坂グリーンクロス23階
+          </div>
+        </li>
+        <li>
+          <div class="company__listHead">アクセス</div>
+          <div class="company__listContent">
+            東京メトロ銀座線・南北線「溜池山王駅」より地下直結<br>
+            東京メトロ丸ノ内線線・千代田線「国会議事堂前駅」より地下直結
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="company__button">
+      <a href="https://www.square.innocom.co.jp/" target="_blank" rel="noopener noreferrer">
+        <div class="d-none-down--lg">
+          <img src="./images/pc/99_button03.png">
+        </div>
+        <div class="d-none-up--lg">
+          <img src="./images/sp/99_button03.png">
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/99_logo@2x.png" alt="3rd Lab. Logo" class="footer__logo">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/99_logo.png" alt="3rd Lab. Logo" class="footer__logo">
+    </div>
+
+    <div class="footer__content">
+      <a href="https://www.innocom.co.jp/information/privacy/" target="_blank" rel="noreferrer noopener" class="footer__link">プライバシーポリシー</a>
+      <a href="https://x.com/3rdlab_hs" target="_blank" rel="noreferrer noopener" class="footer__linkIcon">
+        <img src="./images/pc/x.svg" alt="X Icon">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="section--footButtonSp d-none-up--lg">
+  <a href="https://lhco.li/4mwuLLn" target="_blank" rel="noopener noreferrer">
+    <img src="./images/sp/99_button04.png">
+  </a>
+</div>
+
+</body>
+</html>

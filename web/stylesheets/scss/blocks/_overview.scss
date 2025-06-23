@@ -1,0 +1,85 @@
+.overview {
+  &__container {
+    max-width: calc((1270px * 100dvw) / 1920px);
+    margin: auto;
+
+    @include mq-down(lg) {
+      max-width: calc(((375px - 32px) * 100dvw) / 375px);
+    }
+  }
+  &__card {
+    background: #fff;
+    border-radius: calc((56px * 100dvw) / 1920px);
+    padding: calc((144px * 100dvw) / 1920px) calc((96px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      border-radius: calc((16px * 100dvw) / 375px);
+      padding: calc((48px * 100dvw) / 375px) calc((32px * 100dvw) / 375px);
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: calc((64px * 100dvw) / 1920px);
+    font-weight: 500;
+    letter-spacing: .1em;
+
+    @include mq-down(lg) {
+      text-align: left;
+      font-size: calc((38px * 100dvw) / 375px);
+    }
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc((32px * 100dvw) / 1920px);
+    padding-top: calc((96px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      padding-top: calc((48px * 100dvw) / 375px);
+      gap: calc((48px * 100dvw) / 375px);
+    }
+    & li {
+      display: flex;
+      align-items: stretch;
+
+      @include mq-down(lg) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__listHead {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc((240px * 100dvw) / 1920px);
+    padding: 0 calc((16px * 100dvw) / 1920px);
+    border-right: calc((4px * 100dvw) / 1920px) solid #1bb3b7;
+    font-size: calc((24px * 100dvw) / 1920px);
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: .1em;
+
+    @include mq-down(lg) {
+      justify-content: flex-start;
+      width: 100%;
+      padding: 0 0 calc((8px * 100dvw) / 375px);
+      border-right: none;
+      border-bottom: calc((3px * 100dvw) / 375px) solid #1bb3b7;
+      font-size: calc((16px * 100dvw) / 375px);
+      text-align: left;
+    }
+  }
+  &__listContent {
+    width: calc(100% - ((240px * 100dvw) / 1920px));
+    padding: 0 calc((16px * 100dvw) / 1920px);
+    font-size: calc((24px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      width: 100%;
+      padding: calc((8px * 100dvw) / 375px) 0 0;
+      font-size: calc((16px * 100dvw) / 375px);
+    }
+  }
+}
+
+

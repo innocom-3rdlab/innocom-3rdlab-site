@@ -1,0 +1,35 @@
+// local classes
+%l-resources-button {
+  position: absolute;
+  left: calc((356px * 100dvw) / 1920px);
+  transform: translateY(-50%);
+  z-index: 9;
+
+  @include mq-down(lg) {
+    left: calc((48px * 100dvw) / 375px);
+    top: calc((-44px * 100dvw) / 375px);
+  }
+  & a {
+    display: flex;
+
+    & img {
+      width: calc((569px * 100dvw) / 1920px);
+      height: auto;
+
+      @include mq-down(lg) {
+        width: calc((280px * 100dvw) / 375px);
+      }
+    }
+    &:hover {
+      opacity: .68;
+    }
+  }
+}
+
+.resources {
+  position: relative;
+
+  &__button {
+    @extend %l-resources-button;
+  }
+}
