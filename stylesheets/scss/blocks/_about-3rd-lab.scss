@@ -1,0 +1,45 @@
+// local variables
+$l-about-3rd-lab-text-max-width-pc: calc((1520px * 100dvw) / 1920px);
+$l-about-3rd-lab-text-max-width-sp: calc((312px * 100dvw) / 375px);
+
+.about-3rd-lab {
+  padding: calc((160px * 100dvw) / 1920px) 0;
+
+  &__container {
+    padding: calc((128px * 100dvw) / 1920px) 0;
+    background: url("../images/pc/pc_obj_1.png") no-repeat right calc((32px * 100dvw) / 1920px) center / contain;
+
+    @include mq-down(lg) {
+      padding: calc((64px * 100dvw) / 375px) 0;
+      background: url("../images/sp/sp_obj_1.png") no-repeat right center / contain;
+    }
+  }
+  &__title {
+    @include mq-down(lg) {
+      max-width: calc((320px * 100dvw) / 375px);
+    }
+  }
+  &__text {
+    font-size: calc((26px * 100dvw) / 1920px);
+    max-width: $l-about-3rd-lab-text-max-width-pc;
+    margin: auto;
+    line-height: 175%;
+
+    @include mq-down(lg) {
+      font-size: calc((14px * 100dvw) / 375px);
+      max-width: $l-about-3rd-lab-text-max-width-sp;
+    }
+    & p {
+      padding-top: calc((72px * 100dvw) / 1920px);
+
+      @include mq-down(lg) {
+        padding-top: calc((48px * 100dvw) / 375px);
+      }
+      &:last-child {
+        @include mq-down(lg) {
+          padding-bottom: calc((128px * 100dvw) / 375px);
+        }
+      }
+    }
+  }
+}

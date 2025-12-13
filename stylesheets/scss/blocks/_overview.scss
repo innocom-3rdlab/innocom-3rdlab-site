@@ -1,31 +1,91 @@
 .overview {
-  &__container {
-    max-width: calc((1270px * 100dvw) / 1920px);
-    margin: auto;
+  padding-top: calc((32px * 100dvw) / 1920px);
 
-    @include mq-down(lg) {
-      max-width: calc(((375px - 32px) * 100dvw) / 375px);
-    }
+  @include mq-down(lg) {
+    padding-top: calc((96px * 100dvw) / 375px);
+  }
+  &__container {
+    // keep
   }
   &__card {
     background: #fff;
-    border-radius: calc((56px * 100dvw) / 1920px);
+    border-radius: calc((32px * 100dvw) / 1920px);
     padding: calc((144px * 100dvw) / 1920px) calc((96px * 100dvw) / 1920px);
 
     @include mq-down(lg) {
       border-radius: calc((16px * 100dvw) / 375px);
-      padding: calc((48px * 100dvw) / 375px) calc((32px * 100dvw) / 375px);
+      padding: calc((64px * 100dvw) / 375px) calc((24px * 100dvw) / 375px);
+    }
+  }
+  &__cardText {
+    & > p {
+      padding: calc((64px * 100dvw) / 1920px) 0;
+      font-size: calc((24px * 100dvw) / 1920px);
+      line-height: 175%;
+
+      @include mq-down(lg) {
+        padding: calc((32px * 100dvw) / 375px) 0;
+        font-size: calc((16px * 100dvw) / 375px);
+      }
+    }
+  }
+  &__mainImageAlt {
+    padding: calc((64px * 100dvw) / 1920px) 0;
+
+    @include mq-down(lg) {
+      padding: calc((32px * 100dvw) / 375px) 0;
+      width: calc(100% + ((48px * 100dvw) / 375px));
+      margin-left: calc((-24px * 100dvw) / 375px);
+    }
+  }
+  &__contentGap {
+    padding-top: calc((160px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      padding-top: calc((80px * 100dvw) / 375px);
     }
   }
   &__title {
-    text-align: center;
+    font-weight: 700;
     font-size: calc((64px * 100dvw) / 1920px);
-    font-weight: 500;
-    letter-spacing: .1em;
+    text-align: center;
+    background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @include mq-down(lg) {
-      text-align: left;
-      font-size: calc((38px * 100dvw) / 375px);
+      font-size: calc((32px * 100dvw) / 375px);
+    }
+  }
+  &__titleNote {
+    font-weight: 700;
+    font-size: calc((32px * 100dvw) / 1920px);
+    text-align: center;
+    background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mq-down(lg) {
+      font-size: calc((16px * 100dvw) / 375px);
+    }
+  }
+  &__subTitle {
+    font-weight: 700;
+    font-size: calc((56px * 100dvw) / 1920px);
+    text-align: center;
+    background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mq-down(lg) {
+      font-size: calc((32px * 100dvw) / 375px);
+    }
+  }
+  &__titleGap {
+    padding-top: calc((24px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      padding-top: calc((12px * 100dvw) / 375px);
     }
   }
   & ul {
