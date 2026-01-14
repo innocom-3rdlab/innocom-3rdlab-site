@@ -1,0 +1,51 @@
+// local variables
+$l-about-community-text-max-width-pc: calc((1520px * 100dvw) / 1920px);
+$l-about-community-text-max-width-sp: calc((312px * 100dvw) / 375px);
+
+.about-community {
+  padding: calc((256px * 100dvw) / 1920px) 0;
+
+  &__text {
+    font-size: calc((26px * 100dvw) / 1920px);
+    max-width: $l-about-community-text-max-width-pc;
+    margin: auto;
+    line-height: 175%;
+    padding-top: calc((48px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      font-size: calc((14px * 100dvw) / 375px);
+      max-width: $l-about-community-text-max-width-sp;
+      padding-top: calc((48px * 100dvw) / 375px);
+    }
+  }
+  &__image {
+    display: block;
+    padding-top: calc((128px * 100dvw) / 1920px);
+    max-width: $l-about-community-text-max-width-pc;
+    margin: auto;
+
+    @include mq-down(lg) {
+      padding-top: calc((64px * 100dvw) / 375px);
+      max-width: 100dvw;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: calc((128px * 100dvw) / 1920px);
+
+    & a {
+      &:hover {
+        opacity: .68;
+      }
+    }
+    & img {
+      max-width: calc((390px * 100dvw) / 1920px);
+
+      @include mq-down(lg) {
+        max-width: calc((240px * 100dvw) / 375px);
+      }
+    }
+  }
+}

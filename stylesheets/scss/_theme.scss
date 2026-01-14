@@ -1,0 +1,18 @@
+html, body, button {
+  // font-family: "Helvetica Neue", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+input, textarea {
+  // font-family: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  // background: $color-white;
+}
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  background: #d9d9d9;
+}

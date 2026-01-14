@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build-css": "sass ./stylesheets/scss/_application.scss:./stylesheets/application.min.css --style=compressed",
+    "watch-css": "sass --watch ./stylesheets/scss/_application.scss:./stylesheets/application.min.css --style=compressed",
+    "sync": "browser-sync start --server --files \"**/*\" ",
+    "dev": "concurrently --kill-others \"npm run watch-css\" \"npm run sync\""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.3",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.7"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
