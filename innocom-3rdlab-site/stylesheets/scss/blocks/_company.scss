@@ -1,0 +1,83 @@
+.company {
+  padding-top: calc((64px * 100dvw) / 1920px);
+
+  @include mq-down(lg) {
+    padding-top: calc((24px * 100dvw) / 375px);
+  }
+  &__container {
+    max-width: calc((1660px * 100dvw) / 1920px);
+    margin: auto;
+
+    @include mq-down(lg) {
+      max-width: calc((300px * 100dvw) / 375px);
+    }
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc((32px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      gap: calc((8px * 100dvw) / 375px);
+    }
+    & li {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+  &__listHead {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc((240px * 100dvw) / 1920px);
+    padding: 0 calc((16px * 100dvw) / 1920px);
+    border-right: calc((4px * 100dvw) / 1920px) solid #1bb3b7;
+    font-size: calc((24px * 100dvw) / 1920px);
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: .1em;
+
+    @include mq-down(lg) {
+      align-items: flex-start;
+      width: calc((80px * 100dvw) / 375px);
+      padding: 0 calc((8px * 100dvw) / 375px);
+      border-right: calc((2px * 100dvw) / 375px) solid #1bb3b7;
+      font-size: calc((12px * 100dvw) / 375px);
+    }
+  }
+  &__listContent {
+    width: calc(100% - ((240px * 100dvw) / 1920px));
+    padding: 0 calc((16px * 100dvw) / 1920px);
+    font-size: calc((24px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      width: calc(100% - ((80px * 100dvw) / 375px));
+      padding: 0 calc((8px * 100dvw) / 375px);
+      font-size: calc((12px * 100dvw) / 375px);
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc((160px * 100dvw) / 1920px) 0;
+
+    @include mq-down(lg) {
+      padding: calc((48px * 100dvw) / 375px) 0;
+    }
+    & a {
+      display: flex;
+
+      &:hover {
+        opacity: .68;
+      }
+      & img {
+        width: calc((567px * 100dvw) / 1920px);
+
+        @include mq-down(lg) {
+          width: calc((280px * 100dvw) / 375px);
+        }
+      }
+    }
+  }
+}

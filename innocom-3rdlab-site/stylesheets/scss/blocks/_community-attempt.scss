@@ -1,0 +1,131 @@
+// local variables
+$l-community-attempt-container-max-width-pc: calc((1520px * 100dvw) / 1920px);
+
+.community-attempt {
+  padding: calc((128px * 100dvw) / 1920px) 0 calc((256px * 100dvw) / 1920px);
+
+  &__container {
+    background: linear-gradient(321.65deg, rgba(37, 165, 216, 0.2) 15.64%, rgba(42, 205, 209, 0.2) 81.8%);
+    padding: calc((128px * 100dvw) / 1920px) calc((96px * 100dvw) / 1920px) calc((96px * 100dvw) / 1920px);
+    max-width: $l-community-attempt-container-max-width-pc;
+    margin: auto;
+    border-radius: calc((64px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      max-width: 100dvw;
+      padding: calc((64px * 100dvw) / 375px) calc((32px * 100dvw) / 375px) calc((32px * 100dvw) / 375px);
+      border-radius: calc((32px * 100dvw) / 375px);
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: calc((64px * 100dvw) / 1920px);
+    text-align: center;
+    background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mq-down(lg) {
+      font-size: calc((32px * 100dvw) / 375px);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: calc((64px * 100dvw) / 1920px);
+    gap: calc((32px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      padding-top: calc((32px * 100dvw) / 375px);
+      gap: calc((16px * 100dvw) / 375px);
+    }
+  }
+  &__listBox {
+    border-radius: calc((32px * 100dvw) / 1920px);
+    border: calc((8px * 100dvw) / 1920px) solid #fff;
+    background: rgba(255, 255, 255, .6);
+
+    @include mq-down(lg) {
+      border-radius: calc((16px * 100dvw) / 375px);
+      border: calc((4px * 100dvw) / 375px) solid #fff;
+    }
+  }
+  &__listBoxHead {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: calc((32px * 100dvw) / 1920px);
+    padding: calc((32px * 100dvw) / 1920px);
+    cursor: pointer;
+
+    @include mq-down(lg) {
+      gap: calc((16px * 100dvw) / 375px);
+      padding: calc((16px * 100dvw) / 375px);
+    }
+    &:hover {
+      opacity: .68;
+    }
+    & > span {
+      font-weight: 500;
+      font-size: calc((48px * 100dvw) / 1920px);
+      text-align: center;
+      background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @include mq-down(lg) {
+        font-size: calc((22px * 100dvw) / 375px);
+      }
+    }
+  }
+  &__listBoxHeadIcon {
+    position: relative;
+    width: calc((32px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      width: calc((16px * 100dvw) / 375px);
+    }
+    & > img {
+      position: absolute;
+      width: calc((32px * 100dvw) / 1920px);
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq-down(lg) {
+        width: calc((16px * 100dvw) / 375px);
+      }
+    }
+  }
+  &__listBoxContent {
+    padding: 0 calc((32px * 100dvw) / 1920px) calc((32px * 100dvw) / 1920px);
+
+    @include mq-down(lg) {
+      padding: 0 calc((16px * 100dvw) / 375px) calc((16px * 100dvw) / 375px);
+    }
+    & > span {
+      font-weight: 500;
+      font-size: calc((32px * 100dvw) / 1920px);
+      text-align: center;
+      background: linear-gradient(321.65deg, #25A5D8 15.64%, #2ACDD1 81.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @include mq-down(lg) {
+        font-size: calc((16px * 100dvw) / 375px);
+      }
+    }
+    & > p {
+      padding: calc((64px * 100dvw) / 1920px) calc((32px * 100dvw) / 1920px);
+      font-size: calc((24px * 100dvw) / 1920px);
+      line-height: 175%;
+
+      @include mq-down(lg) {
+        padding: calc((32px * 100dvw) / 375px) calc((16px * 100dvw) / 375px);
+        font-size: calc((14px * 100dvw) / 375px);
+      }
+    }
+  }
+}

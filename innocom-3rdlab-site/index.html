@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>学校でも企業でもない、第3の実験場｜3rd Lab. × InnoCom Square（イノコム・スクエア）</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./stylesheets/application.min.css?240924">
+<!-- /stylesheets -->
+
+<script src="./javascripts/application.js" type="text/javascript" defer></script>
+<script src="./javascripts/modules/slide-toggle.js" type="text/javascript" defer></script>
+<script src="./javascripts/modules/smooth-scroll.js" type="text/javascript" defer></script>
+<!-- /javascripts -->
+
+<!-- little help connectトラッキングコード -->
+<script type='text/javascript' src='https://connect.littlehelp.co.jp/storage/lh-tracking.js'></script>
+<!-- /little help connectトラッキングコード -->
+</head>
+<body>
+  <header class="header">
+    <a data-href="#top">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/99_logo.png" alt="3rd Lab. Logo">
+      </div>
+      <div class="d-none-up--lg">
+        <img src="./images/sp/99_logo.png" alt="3rd Lab. Logo">
+      </div>
+    </a>
+
+    <ul>
+      <li>
+        <a data-href="#statement">Statement</a>
+      </li>
+      <li>
+        <a data-href="#about-3rd-lab">About 3rd Lab.</a>
+      </li>
+      <li>
+        <a data-href="#about-community">About community</a>
+      </li>
+      <li>
+        <a data-href="#innocom">InnoCom Square</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="hamburger-menu d-none-up--lg">
+    <button data-open="menu-list" data-toggle-fade="active">
+      <img src="./images/sp/menu.svg" alt="menu" width="24" height="24">
+    </button>
+
+    <button data-close="menu-list" data-toggle-fade>
+      <img src="./images/sp/close.svg" alt="close" width="24" height="24">
+    </button>
+
+    <ul id="menu-list" data-toggle-fade>
+      <li>
+        <a data-href="#statement" data-close="menu-list">Statement</a>
+      </li>
+      <li>
+        <a data-href="#about-3rd-lab" data-close="menu-list">About 3rd Lab.</a>
+      </li>
+      <li>
+        <a data-href="#about-community" data-close="menu-list">About community</a>
+      </li>
+      <li>
+        <a data-href="#innocom" data-close="menu-list">InnoCom Square</a>
+      </li>
+      <li>
+        <div class="hamburger-menu__footer">
+          <a href="https://www.innocom.co.jp/information/privacy/" target="_blank" rel="noreferrer noopener" class="hamburger-menu__footerLink">プライバシーポリシー</a>
+          <a href="https://x.com/3rdlab_hs" target="_blank" rel="noreferrer noopener" class="hamburger-menu__footerLinkIcon">
+            <img src="./images/pc/x.svg" alt="X Icon">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburgerMenu = document.querySelector('.hamburger-menu')
+
+      hamburgerMenu.querySelector('[data-open]').addEventListener('click', function() {
+        hamburgerMenu.querySelectorAll('[data-toggle-fade]').forEach(el => {
+          const isActive = el.getAttribute('data-toggle-fade') === 'active'
+          el.setAttribute('data-toggle-fade', isActive ? '' : 'active')
+        })
+      })
+
+      hamburgerMenu.querySelectorAll('[data-close]').forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+          hamburgerMenu.querySelectorAll('[data-toggle-fade]').forEach(el => {
+            el.setAttribute('data-toggle-fade', '')
+          })
+          const openBtn = hamburgerMenu.querySelector('[data-open]')
+          openBtn.setAttribute('data-toggle-fade', 'active')
+        })
+      })
+    })
+  </script>
+
+  <section id="top" class="section top">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/2_top.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/2_top.png">
+    </div>
+
+    <div class="top__button">
+      <a href="https://lhco.li/4mwuLLn" target="_blank" rel="noopener noreferrer">
+        <div class="d-none-down--lg">
+          <img src="./images/pc/pc_btn_1.png">
+        </div>
+      </a>
+
+      <a href="https://lhco.li/3FDHhIq" target="_blank" rel="noopener noreferrer">
+        <div class="d-none-down--lg">
+          <img src="./images/pc/pc_btn_2.png">
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="statement" class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/3_stertment01.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/3_stertment01.png">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/4_stertment02.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/4_stertment02.png">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/5_2.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/5_stertment03.png">
+    </div>
+  </section>
+
+  <section class="event section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/pc_text_4.png" alt="3rd Lab. イベント情報">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/sp_text_2.png" alt="3rd Lab. イベント情報">
+    </div>
+
+    <div class="event__text">
+      第一線の実践者やコミュニティメンバーとともに、講演・対話・ワークショップを定期的に開催しています。職場や所属を越えた参加者同士の交流から、多様な視点のフィードバックや新たな連携が生まれ、明日からの行動やプロジェクトにつながるヒントを持ち帰れる場を目指しています。<br>
+      初めての方も大歓迎です。ぜひ気軽に参加し、共に未来の暮らしをアップデートしていきましょう。
+    </div>
+
+    <div class="event__iframe">
+      <iframe
+        src="https://luma.com/embed/calendar/cal-8jFQQbg0mDhaF0i/events"
+        width="725"
+        height="657"
+        frameborder="0"
+        style="border: 1px solid #bfcbda88; border-radius: 4px;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+
+    <div class="event__button">
+      <a href="./" class="d-flex">
+        <div class="d-none-down--lg">
+          <a href="https://luma.com/3rdlab" class="d-flex" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pc/pc_btn_3.png" alt="もっと見る" target="_blank" rel="noopener noreferrer">
+          </a>
+        </div>
+        <div class="d-none-up--lg">
+          <a href="https://luma.com/3rdlab" class="d-flex" target="_blank" rel="noopener noreferrer">
+            <img src="./images/sp/sp_btn_3.png" alt="もっと見る" target="_blank" rel="noopener noreferrer">
+          </a>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- 3rd Lab. イベント情報 -->
+
+  <section class="about-3rd-lab section">
+    <div id="about-3rd-lab" class="about-3rd-lab__container">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/pc_text_2.png" alt="about 3rd Lab.">
+      </div>
+      <div class="d-none-up--lg">
+        <img src="./images/sp/sp_text_3.png" alt="about 3rd Lab." class="about-3rd-lab__title">
+      </div>
+
+      <div class="about-3rd-lab__text">
+        <p>
+          3rd Lab.とは、「住まいと暮らし」を起点とした事業領域に対して、テクノロジーを活用した課題解決に取り組むコミュニティです。
+        </p>
+        <p>
+          「住まい」は、すべての始まりです。<br>
+          そこから広がる「暮らし」に向き合うことで、社会も未来も創っていけると考えています。<br>
+          私たちは、「テクノロジー」と「人」の力が出会う時、<br>
+          不可能だと思えた課題も、解決への道が開けることを信じています。
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- about 3rd Lab.  -->
+
+  <section id="ambassador" class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/7_Ambassador.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/7_Ambassador.png">
+    </div>
+  </section>
+
+  <section id="about-community" class="about-community section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/pc_text_3.png" alt="about Community">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/sp_text_3_1.png" alt="about Community">
+    </div>
+
+    <div class="about-community__text">
+      第一線の実践者やコミュニティメンバーとともに、講演・対話・ワークショップを定期的に開催しています。職場や所属を越えた参加者同士の交流から、多様な視点のフィードバックや新たな連携が生まれ、明日からの行動やプロジェクトにつながるヒントを持ち帰れる場を目指しています。<br>
+      初めての方も大歓迎です。ぜひ気軽に参加し、共に未来の暮らしをアップデートしていきましょう。
+    </div>
+
+    <div class="about-community__image">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/pc_obj_3.png">
+      </div>
+      <div class="d-none-up--lg">
+        <img src="./images/sp/sp_obj_2.png">
+      </div>
+    </div>
+
+    <div class="about-community__button">
+      <a href="./" class="d-flex">
+        <div class="d-none-down--lg">
+          <a href="https://discord.com/invite/p5KZAsqrn9" class="d-flex" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pc/pc_btn_4.png" alt="Discordに参加">
+          </a>
+        </div>
+        <div class="d-none-up--lg">
+          <a href="https://discord.com/invite/p5KZAsqrn9" class="d-flex" target="_blank" rel="noopener noreferrer">
+            <img src="./images/sp/sp_btn_4.png" alt="Discordに参加">
+          </a>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- about Community  -->
+
+  <section class="community-attempt section">
+    <div class="community-attempt__container">
+      <div class="community-attempt__title">コミュニティ内の<br class="d-none-up--lg">取り組み</div>
+
+      <div class="community-attempt__list">
+        <div class="community-attempt__listBox">
+          <div class="community-attempt__listBoxHead" data-slide-toggle="slide-toggle-list-box-01">
+            <span>OPEN STUDIO</span>
+            <div class="community-attempt__listBoxHeadIcon">
+              <img src="./images/pc/down.svg" alt="down" data-toggle-fade="" data-slide-toggle-icon-down="slide-toggle-list-box-01">
+              <img src="./images/pc/up.svg" alt="up" data-toggle-fade="active" data-slide-toggle-icon-up="slide-toggle-list-box-01">
+            </div>
+          </div>
+          <div id="slide-toggle-list-box-01" class="community-attempt__listBoxContent">
+            <span>頻度：毎週2回程度開催</span>
+            <p>
+              OPEN STUDIO（オープンスタジオ）は、イノコムスクエアに遊びに来たい方、3rd Lab.について詳しく知りたい方、学びや実践をシェアしたい方に向けた毎週開催のオープンプログラムです。<br>
+              会場見学会・勉強会・もくもく会などを通じて、職場や学校の外でゆるやかに交流しながら、プロジェクトへのフィードバックや新しい視点を持ち帰れる場を提供しています。
+            </p>
+          </div>
+        </div>
+
+        <div class="community-attempt__listBox">
+          <div class="community-attempt__listBoxHead" data-slide-toggle="slide-toggle-list-box-02">
+            <span>CROSS DIALOGUE</span>
+            <div class="community-attempt__listBoxHeadIcon">
+              <img src="./images/pc/down.svg" alt="down" data-toggle-fade="active" data-slide-toggle-icon-down="slide-toggle-list-box-02">
+              <img src="./images/pc/up.svg" alt="up" data-toggle-fade="" data-slide-toggle-icon-up="slide-toggle-list-box-02">
+            </div>
+          </div>
+          <div id="slide-toggle-list-box-02" class="community-attempt__listBoxContent" style="display: none;">
+            <span>頻度：毎月1回程度開催</span>
+            <p>
+              CROSS DIALOGUE（クロスダイアローグ）は、社会課題解決の第一線で挑戦するゲストを招き、参加者とともに学び合う対話型イベントです。<br>
+              ゲストの実践知に触れながら、対話を通じて社会課題を多角的に捉え直し、自分の現場や関心と結びつけて「自分ごと化」することを大切にしています。<br>
+              明日からの行動やプロジェクトに落とし込めるヒントを持ち帰り、新たな連携や共創が生まれていく場を目指します。
+            </p>
+          </div>
+        </div>
+
+        <div class="community-attempt__listBox">
+          <div class="community-attempt__listBoxHead" data-slide-toggle="slide-toggle-list-box-03">
+            <span>COMMUNITY X</span>
+            <div class="community-attempt__listBoxHeadIcon">
+              <img src="./images/pc/down.svg" alt="down" data-toggle-fade="active" data-slide-toggle-icon-down="slide-toggle-list-box-03">
+              <img src="./images/pc/up.svg" alt="up" data-toggle-fade="" data-slide-toggle-icon-up="slide-toggle-list-box-03">
+            </div>
+          </div>
+          <div id="slide-toggle-list-box-03" class="community-attempt__listBoxContent" style="display: none;">
+            <p>
+              COMMUNITY X(コミュニティクロス)は、3rd Lab.コミュニティメンバーとの共催で開催するコラボレーションイベントです。<br>
+              「暮らしと住まい」× テクノロジーを共に創っていくメンバー同士の交流によって、異なる専門性や経験が交わり、新たな視点・アイデア・連携が生まれることを大切にしています。参加者それぞれの関心やプロジェクトに接続できる学びとヒントを持ち帰り、明日からの一歩につながる共創の場を目指します。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="overview__container">
+          <div class="overview__card">
+            <div class="overview__titleNote">学生には特別なプログラムを<br class="d-none-up--lg">用意しています</div>
+            <div class="overview__title overview__titleGap">学生アンバサダー<br class="d-none-up--lg">プログラム</div>
+
+            <div class="overview__cardText">
+              <p>
+                3rd Lab.学生アンバサダープログラムは、テクノロジーを活用して社会課題に挑戦する学生を応援するプログラムです。<br>
+                情熱と好奇心にあふれる学生たちのプロジェクトが社会実装へと進むよう支援し、共創コミュニティの中で未来の社会課題解決を牽引する、次世代リーダーとしての成長を後押しします。
+              </p>
+            </div>
+
+            <div class="overview__mainImageAlt">
+              <img src="./images/pc/pc_obj_2.png" alt="学生たちのイメージ">
+            </div>
+
+            <div class="overview__title overview__contentGap">アンバサダーに<br class="d-none-up--lg">提供される特典</div>
+            <div class="overview__titleNote overview__titleGap">※支援内容は日々更新されます。</div>
+
+            <div class="overview__mainImageAlt">
+              <div class="d-none-down--lg">
+                <img src="./images/pc/pc_obj_4.png" alt="特典のイメージ">
+              </div>
+              <div class="d-none-up--lg">
+                <img src="./images/sp/sp_obj_3.png" alt="特典のイメージ">
+              </div>
+            </div>
+
+            <div class="overview__subTitle overview__contentGap">Overview</div>
+
+            <ul>
+              <li>
+                <div class="overview__listHead">対象</div>
+                <div class="overview__listContent">
+                  学生団体や学生コミュニティを運営している<br>
+                  大学・大学院・専門学校に在籍する学生（文理不問）
+                </div>
+              </li>
+              <li>
+                <div class="overview__listHead">アンバサダー<br class="d-none-down--lg">特典</div>
+                <div class="overview__listContent">
+                  イノコムスクエア利用・クロマキースタジオ利用・技術サポート・イベント企画サポート・社会人との接点機会・【審査制】開発環境（OpenAI APIキー、Github Codespaces、V0）提供
+                </div>
+              </li>
+              <li>
+                <div class="overview__listHead">アンバサダーに<br>求められること</div>
+                <div class="overview__listContent">
+                  ・テクノロジーを活用した社会課題解決に対する強い想いがあること<br>
+                  ・3rd Lab.を積極的に広める行動力があること<br>
+                  ・提供されるリソースを最大限使うこと<br>
+                  ・キックオフMTGに参加できること<br>
+                  ・DemoDayに参加できること<br>
+                  ・開発に関するソースコードは、GitHub上で管理し、原則としてPublic（公開）設定とすること
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- コミュニティ内の取り組み -->
+
+  <section id="innocom" class="section">
+    <div class="d-none-down--lg">
+      <img src="./images/pc/11_footer02.png">
+    </div>
+    <div class="d-none-up--lg">
+      <img src="./images/sp/11_footer02.png">
+    </div>
+  </section>
+
+  <section class="section company">
+    <div class="company__container">
+      <ul>
+        <li>
+          <div class="company__listHead">施設名</div>
+          <div class="company__listContent">
+            InnoCom Square（イノコム・スクエア）
+          </div>
+        </li>
+        <li>
+          <div class="company__listHead">所在地</div>
+          <div class="company__listContent">
+            〒107-0052<br>
+            東京都港区赤坂2丁目4-6赤坂グリーンクロス23階
+          </div>
+        </li>
+        <li>
+          <div class="company__listHead">アクセス</div>
+          <div class="company__listContent">
+            東京メトロ銀座線・南北線「溜池山王駅」より地下直結<br>
+            東京メトロ丸ノ内線線・千代田線「国会議事堂前駅」より地下直結
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="company__button">
+      <a href="https://www.square.innocom.co.jp/" target="_blank" rel="noopener noreferrer">
+        <div class="d-none-down--lg">
+          <img src="./images/pc/99_button03.png">
+        </div>
+        <div class="d-none-up--lg">
+          <img src="./images/sp/99_button03.png">
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="d-none-down--lg">
+        <img src="./images/pc/99_logo@2x.png" alt="3rd Lab. Logo" class="footer__logo">
+      </div>
+      <div class="d-none-up--lg">
+        <img src="./images/sp/99_logo.png" alt="3rd Lab. Logo" class="footer__logo">
+      </div>
+
+      <div class="footer__content">
+        <a href="https://www.innocom.co.jp/information/privacy/" target="_blank" rel="noreferrer noopener" class="footer__link">プライバシーポリシー</a>
+        <a href="https://x.com/3rdlab_hs" target="_blank" rel="noreferrer noopener" class="footer__linkIcon">
+          <img src="./images/pc/x.svg" alt="X Icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="section--footButtonSp">
+    <a href="https://lhco.li/4mwuLLn" target="_blank" rel="noopener noreferrer">
+      <img src="./images/sp/sp_btn_1.png">
+    </a>
+    <a href="https://lhco.li/3FDHhIq" target="_blank" rel="noopener noreferrer">
+      <img src="./images/sp/sp_btn_2.png">
+    </a>
+  </div>
+
+  <!-- HubSpotトラッキングコード -->
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/241936062.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  <!-- /HubSpotトラッキングコード -->
+</body>
+</html>
